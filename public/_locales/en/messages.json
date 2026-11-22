@@ -1,0 +1,8 @@
+{
+  "extName": {
+    "message": "VidGrab"
+  },
+  "extDescription": {
+    "message": "Download videos from web pages — HLS, DASH, MP4. Runs entirely in the browser."
+  }
+}
