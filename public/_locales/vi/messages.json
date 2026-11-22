@@ -1,8 +1,368 @@
 {
   "extName": {
-    "message": "VidGrab"
+    "message": "VidGrab",
+    "description": "Tên tiện ích"
   },
   "extDescription": {
-    "message": "Tải video từ trang web — HLS, DASH, MP4. Chạy hoàn toàn trong trình duyệt."
+    "message": "Tải video từ trang web — HLS, DASH, MP4. Chạy hoàn toàn trong trình duyệt.",
+    "description": "Mô tả tiện ích"
+  },
+  "status_queued": {
+    "message": "Chờ tải..."
+  },
+  "status_running": {
+    "message": "Đang tải..."
+  },
+  "status_paused": {
+    "message": "Đã tạm dừng"
+  },
+  "status_merging": {
+    "message": "Đang ghép file MP4..."
+  },
+  "status_saving": {
+    "message": "Đang lưu file..."
+  },
+  "status_done": {
+    "message": "Hoàn thành!"
+  },
+  "status_error": {
+    "message": "Có lỗi xảy ra"
+  },
+  "status_cancelled": {
+    "message": "Đã huỷ"
+  },
+  "tab_media": {
+    "message": "Tìm thấy"
+  },
+  "tab_tasks": {
+    "message": "Đang tải"
+  },
+  "header_settings": {
+    "message": "Cài đặt"
+  },
+  "no_videos_found": {
+    "message": "Không tìm thấy video nào"
+  },
+  "no_videos_hint": {
+    "message": "Hãy bật phát video trên trang web hoặc tải lại trang."
+  },
+  "all_domains": {
+    "message": "Tất cả tên miền"
+  },
+  "resolution_label": {
+    "message": "Độ phân giải:"
+  },
+  "btn_preview": {
+    "message": "Xem trước"
+  },
+  "btn_copy_link": {
+    "message": "Sao chép liên kết"
+  },
+  "btn_hide_domain": {
+    "message": "Ẩn tên miền này"
+  },
+  "btn_audio_only": {
+    "message": "Chỉ tải âm thanh (.m4a)"
+  },
+  "btn_download": {
+    "message": "Tải"
+  },
+  "btn_download_title": {
+    "message": "Tải video này"
+  },
+  "preview_modal_title": {
+    "message": "Xem trước:"
+  },
+  "preview_muted_notice": {
+    "message": "Tắt tiếng"
+  },
+  "btn_close": {
+    "message": "Đóng"
+  },
+  "no_tasks": {
+    "message": "Chưa có tác vụ tải nào gần đây."
+  },
+  "default_task_name": {
+    "message": "Tác vụ tải"
+  },
+  "delete_task_title": {
+    "message": "Xoá khỏi danh sách"
+  },
+  "download_page_title": {
+    "message": "VidGrab Downloader"
+  },
+  "task_not_found": {
+    "message": "Không tìm thấy tác vụ"
+  },
+  "task_not_found_desc": {
+    "message": "Mã tác vụ không hợp lệ hoặc đã hoàn tất và được dọn dẹp."
+  },
+  "loading_task": {
+    "message": "Đang tải thông tin tác vụ..."
+  },
+  "keep_tab_open_warning": {
+    "message": "Vui lòng giữ tab này mở: Video đang được tải và ghép trực tiếp qua OPFS để đảm bảo không tràn RAM."
+  },
+  "leave_tab_confirm": {
+    "message": "Quá trình tải đang diễn ra. Bạn có chắc muốn rời đi?"
+  },
+  "file_name_label": {
+    "message": "Tên file"
+  },
+  "merging_status": {
+    "message": "Đang ghép MP4 ($PERCENT$%)",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "download_progress_status": {
+    "message": "Tiến độ tải ($DONE$/$TOTAL$ segments)",
+    "placeholders": {
+      "done": { "content": "$1" },
+      "total": { "content": "$2" }
+    }
+  },
+  "download_complete_status": {
+    "message": "Tải hoàn tất 100%"
+  },
+  "metric_downloaded": {
+    "message": "Đã tải"
+  },
+  "metric_speed": {
+    "message": "Tốc độ"
+  },
+  "metric_eta": {
+    "message": "Còn lại (ETA)"
+  },
+  "metric_segments": {
+    "message": "Segments"
+  },
+  "parallel_threads": {
+    "message": "Số luồng tải song song:"
+  },
+  "error_log_title": {
+    "message": "Nhật ký cảnh báo / lỗi:"
+  },
+  "btn_pause": {
+    "message": "Tạm dừng"
+  },
+  "btn_resume": {
+    "message": "Tiếp tục"
+  },
+  "btn_cancel": {
+    "message": "Huỷ"
+  },
+  "btn_stop_live": {
+    "message": "Dừng & Lưu Livestream"
+  },
+  "btn_save_file": {
+    "message": "Lưu video về máy (MP4)"
+  },
+  "btn_retry": {
+    "message": "Thử lại"
+  },
+  "cancel_confirm": {
+    "message": "Bạn có chắc muốn huỷ tác vụ tải này?"
+  },
+  "save_failed": {
+    "message": "Lưu file thất bại: $ERROR$",
+    "placeholders": {
+      "error": { "content": "$1" }
+    }
+  },
+  "notify_success_title": {
+    "message": "VidGrab — Tải thành công!"
+  },
+  "notify_success_msg": {
+    "message": "Đã hoàn thành tải $FILENAME$",
+    "placeholders": {
+      "filename": { "content": "$1" }
+    }
+  },
+  "record_page_title": {
+    "message": "VidGrab Screen & Stream Recorder"
+  },
+  "record_status_recording": {
+    "message": "Đang ghi..."
+  },
+  "record_status_processing": {
+    "message": "Đang xử lý & ghép video..."
+  },
+  "record_status_done": {
+    "message": "Đã ghi & lưu thành công!"
+  },
+  "record_status_error": {
+    "message": "Lỗi khi ghi video"
+  },
+  "record_metric_time": {
+    "message": "Thời lượng"
+  },
+  "record_metric_chunks": {
+    "message": "Số đoạn đã thu"
+  },
+  "record_metric_size": {
+    "message": "Dung lượng tạm"
+  },
+  "btn_stop_record": {
+    "message": "⏹ Dừng & Lưu MP4"
+  },
+  "record_overlay_btn": {
+    "message": "Ghi video"
+  },
+  "record_overlay_mse": {
+    "message": "Ghi chất lượng gốc (MSE)"
+  },
+  "record_overlay_realtime": {
+    "message": "Ghi thời gian thực (Realtime)"
+  },
+  "options_title": {
+    "message": "Cài đặt VidGrab"
+  },
+  "options_desc": {
+    "message": "Tuỳ chỉnh cấu hình tải video, bộ lọc, ngôn ngữ và lưu trữ tạm thời"
+  },
+  "options_saved_notice": {
+    "message": "Đã lưu cài đặt"
+  },
+  "section_download": {
+    "message": "Tác vụ tải video"
+  },
+  "setting_threads": {
+    "message": "Số luồng tải đồng thời:"
+  },
+  "setting_threads_hint": {
+    "message": "Khuyến nghị 4-8 luồng"
+  },
+  "setting_min_size": {
+    "message": "Kích thước file tối thiểu để bắt (KB):"
+  },
+  "setting_min_size_hint": {
+    "message": "Tránh bắt phải các icon, audio nhỏ"
+  },
+  "setting_filename_template": {
+    "message": "Mẫu đặt tên file:"
+  },
+  "setting_filename_template_hint": {
+    "message": "Thẻ hỗ trợ: {title}, {quality}, {domain}, {date}"
+  },
+  "setting_auto_save": {
+    "message": "Tự động tải file về máy sau khi ghép xong (không cần bấm Lưu)"
+  },
+  "setting_notify": {
+    "message": "Hiển thị thông báo khi tải xong"
+  },
+  "setting_language": {
+    "message": "Ngôn ngữ giao diện:"
+  },
+  "lang_auto": {
+    "message": "Tự động (Theo trình duyệt)"
+  },
+  "lang_vi": {
+    "message": "Tiếng Việt"
+  },
+  "lang_en": {
+    "message": "English"
+  },
+  "section_blocked_domains": {
+    "message": "Tên miền bị chặn / ẩn ($COUNT$)",
+    "placeholders": {
+      "count": { "content": "$1" }
+    }
+  },
+  "section_blocked_domains_desc": {
+    "message": "VidGrab sẽ bỏ qua và không bắt link video từ các tên miền này."
+  },
+  "add_domain_placeholder": {
+    "message": "ví dụ: example.com"
+  },
+  "btn_add": {
+    "message": "Thêm"
+  },
+  "no_blocked_domains": {
+    "message": "Chưa có tên miền nào bị chặn."
+  },
+  "section_storage": {
+    "message": "Bộ nhớ tạm (OPFS)"
+  },
+  "storage_used": {
+    "message": "Dung lượng đã dùng: $USED$ / $QUOTA$",
+    "placeholders": {
+      "used": { "content": "$1" },
+      "quota": { "content": "$2" }
+    }
+  },
+  "storage_task_dirs": {
+    "message": "Thư mục tác vụ tạm: $COUNT$",
+    "placeholders": {
+      "count": { "content": "$1" }
+    }
+  },
+  "btn_clear_storage": {
+    "message": "🗑 Xoá toàn bộ dữ liệu tạm OPFS"
+  },
+  "clearing_storage": {
+    "message": "Đang xoá..."
+  },
+  "clear_storage_confirm": {
+    "message": "Bạn có chắc chắn muốn xoá toàn bộ dữ liệu tạm đang lưu trong OPFS?"
+  },
+  "btn_reset_defaults": {
+    "message": "Khôi phục mặc định ban đầu"
+  },
+  "reset_defaults_confirm": {
+    "message": "Khôi phục tất cả cài đặt về mặc định?"
+  },
+  "section_about": {
+    "message": "Giới thiệu & Điều khoản"
+  },
+  "about_title": {
+    "message": "Về VidGrab"
+  },
+  "about_content": {
+    "message": "VidGrab là tiện ích mở rộng giúp tải video trực tiếp từ trình duyệt mà không cần máy chủ trung gian. 100% dữ liệu được xử lý nội bộ trên thiết bị của bạn."
+  },
+  "privacy_title": {
+    "message": "Chính sách quyền riêng tư"
+  },
+  "privacy_content": {
+    "message": "VidGrab hoàn toàn không thu thập bất kỳ dữ liệu cá nhân nào, không sử dụng công cụ theo dõi, phân tích hoặc gửi yêu cầu ra máy chủ bên ngoài."
+  },
+  "terms_title": {
+    "message": "Điều khoản bản quyền"
+  },
+  "terms_content": {
+    "message": "Người dùng chịu hoàn toàn trách nhiệm pháp lý và bản quyền đối với các nội dung tải về. VidGrab không hỗ trợ và không vượt qua các cơ chế DRM thương mại."
+  },
+  "err_drm_protected": {
+    "message": "Video được bảo vệ bằng DRM (Widevine/FairPlay/PlayReady), extension không hỗ trợ."
+  },
+  "err_youtube_blocked": {
+    "message": "Không hỗ trợ tải video từ YouTube theo chính sách của Chrome Web Store."
+  },
+  "err_network_403": {
+    "message": "Lỗi 403 Forbidden: Server từ chối truy cập (có thể cần đăng nhập trên trang web)."
+  },
+  "err_network_404": {
+    "message": "Lỗi 404 Not Found: Không tìm thấy phân đoạn video hoặc playlist đã hết hạn."
+  },
+  "err_disk_full": {
+    "message": "Không đủ dung lượng bộ nhớ trống trên thiết bị."
+  },
+  "err_cors_tainted": {
+    "message": "Không thể ghi video do hạn chế bảo mật CORS / Cross-Origin."
+  },
+  "err_network_timeout": {
+    "message": "Yêu cầu mạng bị quá thời gian chờ."
+  },
+  "err_merge_failed": {
+    "message": "Quá trình ghép file MP4 thất bại."
+  },
+  "err_parser_error": {
+    "message": "Không thể phân tích playlist video (m3u8 hoặc mpd không hợp lệ)."
+  },
+  "err_unknown": {
+    "message": "Đã xảy ra lỗi không xác định."
   }
 }

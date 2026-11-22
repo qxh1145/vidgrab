@@ -1,8 +1,368 @@
 {
   "extName": {
-    "message": "VidGrab"
+    "message": "VidGrab",
+    "description": "Extension name"
   },
   "extDescription": {
-    "message": "Download videos from web pages — HLS, DASH, MP4. Runs entirely in the browser."
+    "message": "Download videos from web pages — HLS, DASH, MP4. Runs entirely in the browser.",
+    "description": "Extension description"
+  },
+  "status_queued": {
+    "message": "Queued..."
+  },
+  "status_running": {
+    "message": "Downloading..."
+  },
+  "status_paused": {
+    "message": "Paused"
+  },
+  "status_merging": {
+    "message": "Merging MP4..."
+  },
+  "status_saving": {
+    "message": "Saving file..."
+  },
+  "status_done": {
+    "message": "Completed!"
+  },
+  "status_error": {
+    "message": "Error occurred"
+  },
+  "status_cancelled": {
+    "message": "Cancelled"
+  },
+  "tab_media": {
+    "message": "Detected"
+  },
+  "tab_tasks": {
+    "message": "Tasks"
+  },
+  "header_settings": {
+    "message": "Settings"
+  },
+  "no_videos_found": {
+    "message": "No videos found"
+  },
+  "no_videos_hint": {
+    "message": "Play video on the web page or reload the page."
+  },
+  "all_domains": {
+    "message": "All domains"
+  },
+  "resolution_label": {
+    "message": "Resolution:"
+  },
+  "btn_preview": {
+    "message": "Preview"
+  },
+  "btn_copy_link": {
+    "message": "Copy link"
+  },
+  "btn_hide_domain": {
+    "message": "Hide this domain"
+  },
+  "btn_audio_only": {
+    "message": "Audio only (.m4a)"
+  },
+  "btn_download": {
+    "message": "Download"
+  },
+  "btn_download_title": {
+    "message": "Download this video"
+  },
+  "preview_modal_title": {
+    "message": "Preview:"
+  },
+  "preview_muted_notice": {
+    "message": "Muted"
+  },
+  "btn_close": {
+    "message": "Close"
+  },
+  "no_tasks": {
+    "message": "No recent download tasks."
+  },
+  "default_task_name": {
+    "message": "Download task"
+  },
+  "delete_task_title": {
+    "message": "Remove from list"
+  },
+  "download_page_title": {
+    "message": "VidGrab Downloader"
+  },
+  "task_not_found": {
+    "message": "Task not found"
+  },
+  "task_not_found_desc": {
+    "message": "Invalid task ID or the task was already completed and cleaned up."
+  },
+  "loading_task": {
+    "message": "Loading task information..."
+  },
+  "keep_tab_open_warning": {
+    "message": "Please keep this tab open: Video segments are downloaded and merged via OPFS to prevent high memory usage."
+  },
+  "leave_tab_confirm": {
+    "message": "Download in progress. Are you sure you want to leave?"
+  },
+  "file_name_label": {
+    "message": "File name"
+  },
+  "merging_status": {
+    "message": "Merging MP4 ($PERCENT$%)",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "download_progress_status": {
+    "message": "Download progress ($DONE$/$TOTAL$ segments)",
+    "placeholders": {
+      "done": { "content": "$1" },
+      "total": { "content": "$2" }
+    }
+  },
+  "download_complete_status": {
+    "message": "Download completed 100%"
+  },
+  "metric_downloaded": {
+    "message": "Downloaded"
+  },
+  "metric_speed": {
+    "message": "Speed"
+  },
+  "metric_eta": {
+    "message": "Remaining (ETA)"
+  },
+  "metric_segments": {
+    "message": "Segments"
+  },
+  "parallel_threads": {
+    "message": "Parallel download threads:"
+  },
+  "error_log_title": {
+    "message": "Warning / Error Log:"
+  },
+  "btn_pause": {
+    "message": "Pause"
+  },
+  "btn_resume": {
+    "message": "Resume"
+  },
+  "btn_cancel": {
+    "message": "Cancel"
+  },
+  "btn_stop_live": {
+    "message": "Stop & Save Livestream"
+  },
+  "btn_save_file": {
+    "message": "Save video (MP4)"
+  },
+  "btn_retry": {
+    "message": "Retry"
+  },
+  "cancel_confirm": {
+    "message": "Are you sure you want to cancel this download task?"
+  },
+  "save_failed": {
+    "message": "Failed to save file: $ERROR$",
+    "placeholders": {
+      "error": { "content": "$1" }
+    }
+  },
+  "notify_success_title": {
+    "message": "VidGrab — Download complete!"
+  },
+  "notify_success_msg": {
+    "message": "Successfully downloaded $FILENAME$",
+    "placeholders": {
+      "filename": { "content": "$1" }
+    }
+  },
+  "record_page_title": {
+    "message": "VidGrab Screen & Stream Recorder"
+  },
+  "record_status_recording": {
+    "message": "Recording..."
+  },
+  "record_status_processing": {
+    "message": "Processing & merging video..."
+  },
+  "record_status_done": {
+    "message": "Recorded & saved successfully!"
+  },
+  "record_status_error": {
+    "message": "Recording error occurred"
+  },
+  "record_metric_time": {
+    "message": "Duration"
+  },
+  "record_metric_chunks": {
+    "message": "Captured chunks"
+  },
+  "record_metric_size": {
+    "message": "Temp size"
+  },
+  "btn_stop_record": {
+    "message": "⏹ Stop & Save MP4"
+  },
+  "record_overlay_btn": {
+    "message": "Record Video"
+  },
+  "record_overlay_mse": {
+    "message": "Original Quality (MSE)"
+  },
+  "record_overlay_realtime": {
+    "message": "Realtime Capture"
+  },
+  "options_title": {
+    "message": "VidGrab Settings"
+  },
+  "options_desc": {
+    "message": "Configure video download settings, domain filters, language and temporary storage"
+  },
+  "options_saved_notice": {
+    "message": "Settings saved"
+  },
+  "section_download": {
+    "message": "Download Settings"
+  },
+  "setting_threads": {
+    "message": "Parallel download threads:"
+  },
+  "setting_threads_hint": {
+    "message": "Recommended: 4-8 threads"
+  },
+  "setting_min_size": {
+    "message": "Minimum file size to detect (KB):"
+  },
+  "setting_min_size_hint": {
+    "message": "Prevents detecting tiny icons and audio clips"
+  },
+  "setting_filename_template": {
+    "message": "Filename template:"
+  },
+  "setting_filename_template_hint": {
+    "message": "Supported tags: {title}, {quality}, {domain}, {date}"
+  },
+  "setting_auto_save": {
+    "message": "Automatically save file after merging (no need to click Save)"
+  },
+  "setting_notify": {
+    "message": "Show notification when download finishes"
+  },
+  "setting_language": {
+    "message": "Interface language:"
+  },
+  "lang_auto": {
+    "message": "Auto (System default)"
+  },
+  "lang_vi": {
+    "message": "Tiếng Việt (Vietnamese)"
+  },
+  "lang_en": {
+    "message": "English"
+  },
+  "section_blocked_domains": {
+    "message": "Blocked / Hidden Domains ($COUNT$)",
+    "placeholders": {
+      "count": { "content": "$1" }
+    }
+  },
+  "section_blocked_domains_desc": {
+    "message": "VidGrab will ignore and not detect videos from these domains."
+  },
+  "add_domain_placeholder": {
+    "message": "e.g. example.com"
+  },
+  "btn_add": {
+    "message": "Add"
+  },
+  "no_blocked_domains": {
+    "message": "No blocked domains yet."
+  },
+  "section_storage": {
+    "message": "Temporary Storage (OPFS)"
+  },
+  "storage_used": {
+    "message": "Storage used: $USED$ / $QUOTA$",
+    "placeholders": {
+      "used": { "content": "$1" },
+      "quota": { "content": "$2" }
+    }
+  },
+  "storage_task_dirs": {
+    "message": "Temporary task folders: $COUNT$",
+    "placeholders": {
+      "count": { "content": "$1" }
+    }
+  },
+  "btn_clear_storage": {
+    "message": "🗑 Clear all OPFS temporary data"
+  },
+  "clearing_storage": {
+    "message": "Clearing..."
+  },
+  "clear_storage_confirm": {
+    "message": "Are you sure you want to delete all temporary data in OPFS?"
+  },
+  "btn_reset_defaults": {
+    "message": "Reset to default settings"
+  },
+  "reset_defaults_confirm": {
+    "message": "Reset all settings to default values?"
+  },
+  "section_about": {
+    "message": "About & Legal"
+  },
+  "about_title": {
+    "message": "About VidGrab"
+  },
+  "about_content": {
+    "message": "VidGrab is a browser extension that downloads videos directly in your browser without any external server. 100% of data is processed locally on your machine."
+  },
+  "privacy_title": {
+    "message": "Privacy Policy"
+  },
+  "privacy_content": {
+    "message": "VidGrab collects zero personal data, has no tracking or analytics, and sends no requests to third-party servers."
+  },
+  "terms_title": {
+    "message": "Copyright & Terms of Use"
+  },
+  "terms_content": {
+    "message": "Users are solely responsible for copyright compliance and legal terms for downloaded content. VidGrab does not support and will not bypass commercial DRM protections."
+  },
+  "err_drm_protected": {
+    "message": "Video is protected by DRM (Widevine/FairPlay/PlayReady) and cannot be downloaded."
+  },
+  "err_youtube_blocked": {
+    "message": "YouTube video downloads are not supported per Chrome Web Store policies."
+  },
+  "err_network_403": {
+    "message": "Error 403 Forbidden: Access denied (authentication on the website may be required)."
+  },
+  "err_network_404": {
+    "message": "Error 404 Not Found: Video segments or playlist not found / expired."
+  },
+  "err_disk_full": {
+    "message": "Insufficient disk space on your device."
+  },
+  "err_cors_tainted": {
+    "message": "Cannot capture video due to CORS / Cross-Origin security restrictions."
+  },
+  "err_network_timeout": {
+    "message": "Network request timed out."
+  },
+  "err_merge_failed": {
+    "message": "Failed to remux/merge MP4 tracks."
+  },
+  "err_parser_error": {
+    "message": "Could not parse video playlist (invalid m3u8 or mpd)."
+  },
+  "err_unknown": {
+    "message": "An unknown error occurred."
   }
 }
